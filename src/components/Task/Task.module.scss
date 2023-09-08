@@ -1,0 +1,108 @@
+.task {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0.4px #bababa;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.title {
+    font-weight: 600;
+    margin: 1.005rem 0rem;
+}
+
+.text {
+    opacity: 0.6;
+}
+
+.date {
+    text-align: right;
+    margin-left: auto;
+    justify-content: end;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.button {
+    background-color: #1976d2;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: right;
+    margin-left: auto;
+    justify-content: end;
+    transition: all 0.2s;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.taskIsDone {
+    position: relative;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px 0.4px #bababa;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.titleIsDone {
+    font-weight: 600;
+    margin: 1.005rem 0rem;
+}
+
+.textIsDone {
+    opacity: 0.6;
+}
+
+.dateIsDone {
+    text-align: right;
+    margin-left: auto;
+    justify-content: end;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+}
+
+.buttonIsDone {
+    background-color: #d6d6d6;
+    color: black;
+    padding: 0.6rem 1.4rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-align: right;
+    margin-left: auto;
+    justify-content: end;
+    transition: all 0.2s;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+}
+
+.buttonIsDone:hover {
+    opacity: 0.6;
+}
+
+.btnDelete {
+    background-color: #d21919;
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    border-radius: 4px;
+    font-size: 11px;
+    transition: all 0.2s;
+    margin-top: 1rem;
+}
+
+.btnDelete:hover {
+    opacity: 0.8;
+}
