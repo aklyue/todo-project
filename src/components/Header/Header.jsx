@@ -3,6 +3,8 @@ import React from "react";
 import s from './Header.module.scss'
 import { Link } from "react-router-dom";
 
+import {useSelector} from 'react-redux';
+
 function Header({ countIsDone, countInProcess }) {
     return (
         <div className={s.container}>

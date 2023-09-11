@@ -7,16 +7,13 @@ import Workspace from "../../components/Workspace";
 
 import s from './HomePage.module.scss'
 
-function HomePage({ countIsDone, countInProcess, refreshTaskData, tasks, setTasks, handleDelete }) {
-    useEffect(() => {
-        refreshTaskData();
-    }, [tasks])
+function HomePage({ countIsDone, countInProcess, refreshTaskData, setTasks, handleDelete }) {
 
     return (
         <div className={s.homePage}>
             <Header countIsDone={countIsDone} countInProcess={countInProcess} />
-            <TaskCreator refreshTaskData={refreshTaskData} setTasks={setTasks} tasks={tasks} />
-            <Workspace refreshTaskData={refreshTaskData} setTasks={setTasks} tasks={tasks} handleDelete={handleDelete}/>
+            <TaskCreator />
+            <Workspace refreshTaskData={refreshTaskData} setTasks={setTasks} handleDelete={handleDelete}/>
         </div>
     )
 }
