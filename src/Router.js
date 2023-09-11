@@ -3,8 +3,11 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import DashboardPage from "./pages/DashboardPage";
 import CounterPage from "./pages/CounterPage";
+import { useDispatch } from "react-redux";
+import { removeTask } from "./store/tasksSlice";
 
 function Router() {
+  const dispatch = useDispatch();
   const [tasks, setTasks] = useState([]);
   const [countIsDone, setCountIsDone] = useState(2);
   const [countInProcess, setCountInProcess] = useState(0);
@@ -23,7 +26,7 @@ function Router() {
   };
 
   const handleDelete = (taskId) => {
-    setTasks(tasks.filter((task) => task.id !== taskId))
+    dispatch(removeTask(taskId))
   }
 
   useEffect(() => {
